@@ -1,7 +1,7 @@
 <!DOCTYPE html>
 <html>
   <head>
-    <title>Toggle Figures Example</title>
+    <title>IS23-2254</title>
     <style>
       .figure {
         display: none;
@@ -20,102 +20,136 @@
       <h1>What Can an Accent Identifier Learn? Probing Phonetic and Prosodic Information in a Wav2vec2-based Accent Identification Model</h1>
       <h2>Interspeech 2023 - Paper ID: 2254</h2>
     </center>
-    <h3>This page provides additional examples of Interspeech 2023 submission 2254. <span style="color: red;">Click the grey buttons and scroll to show figures.</span></h3>
-    <h4>1. The full list of CCA and MSE scores on the 7 accents: AB, CN, IN, KR, SP, US, VN. </h4>
-    <p>(Click on the buttons to toggle the figure)</p>
-    <button class="toggle-btn" onclick="toggleFigure('curves')">CCA + MSE scores</button>
+    <h3>This page provides additional examples for Interspeech 2023 submission 2254. <span style="color: red;">Click the grey buttons and scroll to show figures.</span></h3>
     <div>
-      <figure id="curves" class="figure"><img src="plots/all_curves.png" alt="plots/all_curves.png" width="700"><figcaption>CCA and MSE scores</figcaption></figure>
+      <h4>1. The full list of CCA and MSE scores on the 7 accents: AB, CN, IN, KR, SP, US, VN. </h4>
+      <p>(Click on the buttons to toggle the figure)</p>
+      <button class="toggle-btn" onclick="toggleFigure('curves')">CCA + MSE scores</button>
+      <div>
+        <figure id="curves" class="figure"><img src="plots/all_curves.png" alt="plots/all_curves.png" width="700"><figcaption>CCA and MSE scores</figcaption></figure>
+      </div>
     </div>
-    <h4>2. t-SNE visualization for all ARPAbet phonemes.</h4>
-    <p>(Click on the buttons to toggle the figures)</p>
-    <p>Vowels</p>
-    <button class="toggle-btn" onclick="toggleFigure('AA')">AA</button>
-    <button class="toggle-btn" onclick="toggleFigure('AE')">AE</button>
-    <button class="toggle-btn" onclick="toggleFigure('AH')">AH</button>
-    <button class="toggle-btn" onclick="toggleFigure('AO')">AO</button>
-    <button class="toggle-btn" onclick="toggleFigure('AW')">AW</button>
-    <button class="toggle-btn" onclick="toggleFigure('AY')">AY</button>
-    <button class="toggle-btn" onclick="toggleFigure('EH')">EH</button>
-    <button class="toggle-btn" onclick="toggleFigure('ER')">ER</button>
-    <button class="toggle-btn" onclick="toggleFigure('EY')">EY</button>
-    <button class="toggle-btn" onclick="toggleFigure('IH')">IH</button>
-    <button class="toggle-btn" onclick="toggleFigure('IY')">IY</button>
-    <button class="toggle-btn" onclick="toggleFigure('OW')">OW</button>
-    <button class="toggle-btn" onclick="toggleFigure('OY')">OY</button>
-    <button class="toggle-btn" onclick="toggleFigure('UH')">UH</button>
-    <button class="toggle-btn" onclick="toggleFigure('UW')">UW</button>
-    <p>Stops</p>
-    <button class="toggle-btn" onclick="toggleFigure('B')">B</button>
-    <button class="toggle-btn" onclick="toggleFigure('D')">D</button>
-    <button class="toggle-btn" onclick="toggleFigure('G')">G</button>
-    <button class="toggle-btn" onclick="toggleFigure('K')">K</button>
-    <button class="toggle-btn" onclick="toggleFigure('P')">P</button>
-    <button class="toggle-btn" onclick="toggleFigure('T')">T</button>
-    <p>Fricatives</p>
-    <button class="toggle-btn" onclick="toggleFigure('DH')">DH</button>
-    <button class="toggle-btn" onclick="toggleFigure('F')">F</button>
-    <button class="toggle-btn" onclick="toggleFigure('S')">S</button>
-    <button class="toggle-btn" onclick="toggleFigure('SH')">SH</button>
-    <button class="toggle-btn" onclick="toggleFigure('TH')">TH</button>
-    <button class="toggle-btn" onclick="toggleFigure('V')">V</button>
-    <button class="toggle-btn" onclick="toggleFigure('Z')">Z</button>
-    <button class="toggle-btn" onclick="toggleFigure('ZH')">ZH</button>
-    <p>Affricates</p>
-    <button class="toggle-btn" onclick="toggleFigure('CH')">CH</button>
-    <button class="toggle-btn" onclick="toggleFigure('JH')">JH</button>
-    <p>Nasals</p>
-    <button class="toggle-btn" onclick="toggleFigure('M')">M</button>
-    <button class="toggle-btn" onclick="toggleFigure('N')">N</button>
-    <button class="toggle-btn" onclick="toggleFigure('NG')">NG</button>
-    <p>Liquids</p>
-    <button class="toggle-btn" onclick="toggleFigure('L')">L</button>
-    <button class="toggle-btn" onclick="toggleFigure('R')">R</button>
-    <p>Glides</p>
-    <button class="toggle-btn" onclick="toggleFigure('W')">W</button>
-    <button class="toggle-btn" onclick="toggleFigure('Y')">Y</button>
-    <p>Silence</p>
-    <button class="toggle-btn" onclick="toggleFigure('sil')">sil</button>
     <div>
-      <figure id="AA" class="figure"><img src="plots/AA.png" alt="plots/AA.png" width="600"><figcaption>AA</figcaption></figure>
-      <figure id="AE" class="figure"><img src="plots/AE.png" alt="plots/AE.png" width="600"><figcaption>AE</figcaption></figure>
-      <figure id="AH" class="figure"><img src="plots/AH.png" alt="plots/AH.png" width="600"><figcaption>AH</figcaption></figure>
-      <figure id="AO" class="figure"><img src="plots/AO.png" alt="plots/AO.png" width="600"><figcaption>AO</figcaption></figure>
-      <figure id="AW" class="figure"><img src="plots/AW.png" alt="plots/AW.png" width="600"><figcaption>AW</figcaption></figure>
-      <figure id="AY" class="figure"><img src="plots/AY.png" alt="plots/AY.png" width="600"><figcaption>AY</figcaption></figure>
-      <figure id="EH" class="figure"><img src="plots/EH.png" alt="plots/EH.png" width="600"><figcaption>EH</figcaption></figure>
-      <figure id="ER" class="figure"><img src="plots/ER.png" alt="plots/ER.png" width="600"><figcaption>ER</figcaption></figure>
-      <figure id="EY" class="figure"><img src="plots/EY.png" alt="plots/EY.png" width="600"><figcaption>EY</figcaption></figure>
-      <figure id="IH" class="figure"><img src="plots/IH.png" alt="plots/IH.png" width="600"><figcaption>IH</figcaption></figure>
-      <figure id="IY" class="figure"><img src="plots/IY.png" alt="plots/IY.png" width="600"><figcaption>IY</figcaption></figure>
-      <figure id="OW" class="figure"><img src="plots/OW.png" alt="plots/OW.png" width="600"><figcaption>OW</figcaption></figure>
-      <figure id="OY" class="figure"><img src="plots/OY.png" alt="plots/OY.png" width="600"><figcaption>OY</figcaption></figure>
-      <figure id="UH" class="figure"><img src="plots/UH.png" alt="plots/UH.png" width="600"><figcaption>UH</figcaption></figure>
-      <figure id="UW" class="figure"><img src="plots/UW.png" alt="plots/UW.png" width="600"><figcaption>UW</figcaption></figure>
-      <figure id="B" class="figure"><img src="plots/B.png" alt="plots/B.png" width="600"><figcaption>B</figcaption></figure>
-      <figure id="D" class="figure"><img src="plots/D.png" alt="plots/D.png" width="600"><figcaption>D</figcaption></figure>
-      <figure id="G" class="figure"><img src="plots/G.png" alt="plots/G.png" width="600"><figcaption>G</figcaption></figure>
-      <figure id="K" class="figure"><img src="plots/K.png" alt="plots/K.png" width="600"><figcaption>K</figcaption></figure>
-      <figure id="P" class="figure"><img src="plots/P.png" alt="plots/P.png" width="600"><figcaption>P</figcaption></figure>
-      <figure id="T" class="figure"><img src="plots/T.png" alt="plots/T.png" width="600"><figcaption>T</figcaption></figure>
-      <figure id="DH" class="figure"><img src="plots/DH.png" alt="plots/DH.png" width="600"><figcaption>DH</figcaption></figure>
-      <figure id="F" class="figure"><img src="plots/F.png" alt="plots/F.png" width="600"><figcaption>F</figcaption></figure>
-      <figure id="S" class="figure"><img src="plots/S.png" alt="plots/S.png" width="600"><figcaption>S</figcaption></figure>
-      <figure id="SH" class="figure"><img src="plots/SH.png" alt="plots/SH.png" width="600"><figcaption>SH</figcaption></figure>
-      <figure id="TH" class="figure"><img src="plots/TH.png" alt="plots/TH.png" width="600"><figcaption>TH</figcaption></figure>
-      <figure id="V" class="figure"><img src="plots/V.png" alt="plots/V.png" width="600"><figcaption>V</figcaption></figure>
-      <figure id="Z" class="figure"><img src="plots/Z.png" alt="plots/Z.png" width="600"><figcaption>Z</figcaption></figure>
-      <figure id="ZH" class="figure"><img src="plots/ZH.png" alt="plots/ZH.png" width="600"><figcaption>ZH</figcaption></figure>
-      <figure id="CH" class="figure"><img src="plots/CH.png" alt="plots/CH.png" width="600"><figcaption>CH</figcaption></figure>
-      <figure id="JH" class="figure"><img src="plots/JH.png" alt="plots/JH.png" width="600"><figcaption>JH</figcaption></figure>
-      <figure id="M" class="figure"><img src="plots/M.png" alt="plots/M.png" width="600"><figcaption>M</figcaption></figure>
-      <figure id="N" class="figure"><img src="plots/N.png" alt="plots/N.png" width="600"><figcaption>N</figcaption></figure>
-      <figure id="NG" class="figure"><img src="plots/NG.png" alt="plots/NG.png" width="600"><figcaption>NG</figcaption></figure>
-      <figure id="L" class="figure"><img src="plots/L.png" alt="plots/L.png" width="600"><figcaption>L</figcaption></figure>
-      <figure id="R" class="figure"><img src="plots/R.png" alt="plots/R.png" width="600"><figcaption>R</figcaption></figure>
-      <figure id="W" class="figure"><img src="plots/W.png" alt="plots/W.png" width="600"><figcaption>W</figcaption></figure>
-      <figure id="Y" class="figure"><img src="plots/Y.png" alt="plots/Y.png" width="600"><figcaption>Y</figcaption></figure>
-      <figure id="sil" class="figure"><img src="plots/sil.png" alt="plots/sil.png" width="600"><figcaption>sil</figcaption></figure>
+      <h4>2. t-SNE visualization for all ARPAbet phonemes.</h4>
+      <p>(Click on the buttons to toggle the figures)</p>
+      <p>Vowels</p>
+      <button class="toggle-btn" onclick="toggleFigure('AA')">AA</button>
+      <button class="toggle-btn" onclick="toggleFigure('AE')">AE</button>
+      <button class="toggle-btn" onclick="toggleFigure('AH')">AH</button>
+      <button class="toggle-btn" onclick="toggleFigure('AO')">AO</button>
+      <button class="toggle-btn" onclick="toggleFigure('AW')">AW</button>
+      <button class="toggle-btn" onclick="toggleFigure('AY')">AY</button>
+      <button class="toggle-btn" onclick="toggleFigure('EH')">EH</button>
+      <button class="toggle-btn" onclick="toggleFigure('ER')">ER</button>
+      <button class="toggle-btn" onclick="toggleFigure('EY')">EY</button>
+      <button class="toggle-btn" onclick="toggleFigure('IH')">IH</button>
+      <button class="toggle-btn" onclick="toggleFigure('IY')">IY</button>
+      <button class="toggle-btn" onclick="toggleFigure('OW')">OW</button>
+      <button class="toggle-btn" onclick="toggleFigure('OY')">OY</button>
+      <button class="toggle-btn" onclick="toggleFigure('UH')">UH</button>
+      <button class="toggle-btn" onclick="toggleFigure('UW')">UW</button>
+      <div>
+        <figure id="AA" class="figure"><img src="plots/AA.png" alt="plots/AA.png" width="600"><figcaption>AA</figcaption></figure>
+        <figure id="AE" class="figure"><img src="plots/AE.png" alt="plots/AE.png" width="600"><figcaption>AE</figcaption></figure>
+        <figure id="AH" class="figure"><img src="plots/AH.png" alt="plots/AH.png" width="600"><figcaption>AH</figcaption></figure>
+        <figure id="AO" class="figure"><img src="plots/AO.png" alt="plots/AO.png" width="600"><figcaption>AO</figcaption></figure>
+        <figure id="AW" class="figure"><img src="plots/AW.png" alt="plots/AW.png" width="600"><figcaption>AW</figcaption></figure>
+        <figure id="AY" class="figure"><img src="plots/AY.png" alt="plots/AY.png" width="600"><figcaption>AY</figcaption></figure>
+        <figure id="EH" class="figure"><img src="plots/EH.png" alt="plots/EH.png" width="600"><figcaption>EH</figcaption></figure>
+        <figure id="ER" class="figure"><img src="plots/ER.png" alt="plots/ER.png" width="600"><figcaption>ER</figcaption></figure>
+        <figure id="EY" class="figure"><img src="plots/EY.png" alt="plots/EY.png" width="600"><figcaption>EY</figcaption></figure>
+        <figure id="IH" class="figure"><img src="plots/IH.png" alt="plots/IH.png" width="600"><figcaption>IH</figcaption></figure>
+        <figure id="IY" class="figure"><img src="plots/IY.png" alt="plots/IY.png" width="600"><figcaption>IY</figcaption></figure>
+        <figure id="OW" class="figure"><img src="plots/OW.png" alt="plots/OW.png" width="600"><figcaption>OW</figcaption></figure>
+        <figure id="OY" class="figure"><img src="plots/OY.png" alt="plots/OY.png" width="600"><figcaption>OY</figcaption></figure>
+        <figure id="UH" class="figure"><img src="plots/UH.png" alt="plots/UH.png" width="600"><figcaption>UH</figcaption></figure>
+        <figure id="UW" class="figure"><img src="plots/UW.png" alt="plots/UW.png" width="600"><figcaption>UW</figcaption></figure>
+        </div>
+    </div>
+    <div>
+      <p>Stops</p>
+      <button class="toggle-btn" onclick="toggleFigure('B')">B</button>
+      <button class="toggle-btn" onclick="toggleFigure('D')">D</button>
+      <button class="toggle-btn" onclick="toggleFigure('G')">G</button>
+      <button class="toggle-btn" onclick="toggleFigure('K')">K</button>
+      <button class="toggle-btn" onclick="toggleFigure('P')">P</button>
+      <button class="toggle-btn" onclick="toggleFigure('T')">T</button>
+      <div>
+        <figure id="B" class="figure"><img src="plots/B.png" alt="plots/B.png" width="600"><figcaption>B</figcaption></figure>
+        <figure id="D" class="figure"><img src="plots/D.png" alt="plots/D.png" width="600"><figcaption>D</figcaption></figure>
+        <figure id="G" class="figure"><img src="plots/G.png" alt="plots/G.png" width="600"><figcaption>G</figcaption></figure>
+        <figure id="K" class="figure"><img src="plots/K.png" alt="plots/K.png" width="600"><figcaption>K</figcaption></figure>
+        <figure id="P" class="figure"><img src="plots/P.png" alt="plots/P.png" width="600"><figcaption>P</figcaption></figure>
+        <figure id="T" class="figure"><img src="plots/T.png" alt="plots/T.png" width="600"><figcaption>T</figcaption></figure>
+      </div>
+    </div>
+    <div>
+      <p>Fricatives</p>
+      <button class="toggle-btn" onclick="toggleFigure('DH')">DH</button>
+      <button class="toggle-btn" onclick="toggleFigure('F')">F</button>
+      <button class="toggle-btn" onclick="toggleFigure('S')">S</button>
+      <button class="toggle-btn" onclick="toggleFigure('SH')">SH</button>
+      <button class="toggle-btn" onclick="toggleFigure('TH')">TH</button>
+      <button class="toggle-btn" onclick="toggleFigure('V')">V</button>
+      <button class="toggle-btn" onclick="toggleFigure('Z')">Z</button>
+      <button class="toggle-btn" onclick="toggleFigure('ZH')">ZH</button>
+      <div>
+        <figure id="DH" class="figure"><img src="plots/DH.png" alt="plots/DH.png" width="600"><figcaption>DH</figcaption></figure>
+        <figure id="F" class="figure"><img src="plots/F.png" alt="plots/F.png" width="600"><figcaption>F</figcaption></figure>
+        <figure id="S" class="figure"><img src="plots/S.png" alt="plots/S.png" width="600"><figcaption>S</figcaption></figure>
+        <figure id="SH" class="figure"><img src="plots/SH.png" alt="plots/SH.png" width="600"><figcaption>SH</figcaption></figure>
+        <figure id="TH" class="figure"><img src="plots/TH.png" alt="plots/TH.png" width="600"><figcaption>TH</figcaption></figure>
+        <figure id="V" class="figure"><img src="plots/V.png" alt="plots/V.png" width="600"><figcaption>V</figcaption></figure>
+        <figure id="Z" class="figure"><img src="plots/Z.png" alt="plots/Z.png" width="600"><figcaption>Z</figcaption></figure>
+        <figure id="ZH" class="figure"><img src="plots/ZH.png" alt="plots/ZH.png" width="600"><figcaption>ZH</figcaption></figure>
+      </div>
+    </div>
+    
+    <div>
+      <p>Affricates</p>
+      <button class="toggle-btn" onclick="toggleFigure('CH')">CH</button>
+      <button class="toggle-btn" onclick="toggleFigure('JH')">JH</button>
+      <div>
+        <figure id="CH" class="figure"><img src="plots/CH.png" alt="plots/CH.png" width="600"><figcaption>CH</figcaption></figure>
+        <figure id="JH" class="figure"><img src="plots/JH.png" alt="plots/JH.png" width="600"><figcaption>JH</figcaption></figure>
+      </div>
+    </div>
+    <div>
+      <p>Nasals</p>
+      <button class="toggle-btn" onclick="toggleFigure('M')">M</button>
+      <button class="toggle-btn" onclick="toggleFigure('N')">N</button>
+      <button class="toggle-btn" onclick="toggleFigure('NG')">NG</button>
+      <div>
+        <figure id="M" class="figure"><img src="plots/M.png" alt="plots/M.png" width="600"><figcaption>M</figcaption></figure>
+        <figure id="N" class="figure"><img src="plots/N.png" alt="plots/N.png" width="600"><figcaption>N</figcaption></figure>
+        <figure id="NG" class="figure"><img src="plots/NG.png" alt="plots/NG.png" width="600"><figcaption>NG</figcaption></figure>
+      </div>
+    </div>
+    <div>
+      <p>Liquids</p>
+      <button class="toggle-btn" onclick="toggleFigure('L')">L</button>
+      <button class="toggle-btn" onclick="toggleFigure('R')">R</button>
+      <div>
+        <figure id="L" class="figure"><img src="plots/L.png" alt="plots/L.png" width="600"><figcaption>L</figcaption></figure>
+        <figure id="R" class="figure"><img src="plots/R.png" alt="plots/R.png" width="600"><figcaption>R</figcaption></figure>
+      </div>
+    </div>
+    <div>
+      <p>Glides</p>
+      <button class="toggle-btn" onclick="toggleFigure('W')">W</button>
+      <button class="toggle-btn" onclick="toggleFigure('Y')">Y</button>
+      <div>
+        <figure id="W" class="figure"><img src="plots/W.png" alt="plots/W.png" width="600"><figcaption>W</figcaption></figure>
+        <figure id="Y" class="figure"><img src="plots/Y.png" alt="plots/Y.png" width="600"><figcaption>Y</figcaption></figure>
+      </div>
+      
+    </div>
+    <div>
+      <p>Silence</p>
+      <button class="toggle-btn" onclick="toggleFigure('sil')">sil</button>
+      <div>
+        <figure id="sil" class="figure"><img src="plots/sil.png" alt="plots/sil.png" width="600"><figcaption>sil</figcaption></figure>
+      </div>
     </div>
     <h4>3. Bonus: t-SNE visualization of multiple phonemes of a specific accent.</h4>
     <p>(Click on the buttons to toggle the figures)</p>
