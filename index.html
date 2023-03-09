@@ -9,6 +9,10 @@
       .show {
         display: block;
       }
+      .btn-toggle {
+      background-color: green;
+      color: white;
+    }
     </style>
   </head>
   <body>
@@ -19,59 +23,59 @@
     <h3>This page provides additional examples of Interspeech 2023 submission 2254. <span style="color: red;">Click the grey buttons to show figures.</span></h3>
     <h4>1. The full list of CCA and MSE scores on the 7 accents: AB, CN, IN, KR, SP, US, VN. </h4>
     <p>(Click on the buttons to toggle the figure)</p>
-    <button onclick="toggleFigure('curves')">CCA + MSE scores</button>
+    <button class="toggle-btn" onclick="toggleFigure('curves')">CCA + MSE scores</button>
     <div>
       <figure id="curves" class="figure"><img src="plots/all_curves.png" alt="plots/all_curves.png" width="700"><figcaption>CCA and MSE scores</figcaption></figure>
     </div>
     <h4>2. t-SNE visualization for all ARPAbet phonemes.</h4>
     <p>(Click on the buttons to toggle the figures)</p>
     <p>Vowels</p>
-    <button onclick="toggleFigure('AA')">AA</button>
-    <button onclick="toggleFigure('AE')">AE</button>
-    <button onclick="toggleFigure('AH')">AH</button>
-    <button onclick="toggleFigure('AO')">AO</button>
-    <button onclick="toggleFigure('AW')">AW</button>
-    <button onclick="toggleFigure('AY')">AY</button>
-    <button onclick="toggleFigure('EH')">EH</button>
-    <button onclick="toggleFigure('ER')">ER</button>
-    <button onclick="toggleFigure('EY')">EY</button>
-    <button onclick="toggleFigure('IH')">IH</button>
-    <button onclick="toggleFigure('IY')">IY</button>
-    <button onclick="toggleFigure('OW')">OW</button>
-    <button onclick="toggleFigure('OY')">OY</button>
-    <button onclick="toggleFigure('UH')">UH</button>
-    <button onclick="toggleFigure('UW')">UW</button>
+    <button class="toggle-btn" onclick="toggleFigure('AA')">AA</button>
+    <button class="toggle-btn" onclick="toggleFigure('AE')">AE</button>
+    <button class="toggle-btn" onclick="toggleFigure('AH')">AH</button>
+    <button class="toggle-btn" onclick="toggleFigure('AO')">AO</button>
+    <button class="toggle-btn" onclick="toggleFigure('AW')">AW</button>
+    <button class="toggle-btn" onclick="toggleFigure('AY')">AY</button>
+    <button class="toggle-btn" onclick="toggleFigure('EH')">EH</button>
+    <button class="toggle-btn" onclick="toggleFigure('ER')">ER</button>
+    <button class="toggle-btn" onclick="toggleFigure('EY')">EY</button>
+    <button class="toggle-btn" onclick="toggleFigure('IH')">IH</button>
+    <button class="toggle-btn" onclick="toggleFigure('IY')">IY</button>
+    <button class="toggle-btn" onclick="toggleFigure('OW')">OW</button>
+    <button class="toggle-btn" onclick="toggleFigure('OY')">OY</button>
+    <button class="toggle-btn" onclick="toggleFigure('UH')">UH</button>
+    <button class="toggle-btn" onclick="toggleFigure('UW')">UW</button>
     <p>Stops</p>
-    <button onclick="toggleFigure('B')">B</button>
-    <button onclick="toggleFigure('D')">D</button>
-    <button onclick="toggleFigure('G')">G</button>
-    <button onclick="toggleFigure('K')">K</button>
-    <button onclick="toggleFigure('P')">P</button>
-    <button onclick="toggleFigure('T')">T</button>
+    <button class="toggle-btn" onclick="toggleFigure('B')">B</button>
+    <button class="toggle-btn" onclick="toggleFigure('D')">D</button>
+    <button class="toggle-btn" onclick="toggleFigure('G')">G</button>
+    <button class="toggle-btn" onclick="toggleFigure('K')">K</button>
+    <button class="toggle-btn" onclick="toggleFigure('P')">P</button>
+    <button class="toggle-btn" onclick="toggleFigure('T')">T</button>
     <p>Fricatives</p>
-    <button onclick="toggleFigure('DH')">DH</button>
-    <button onclick="toggleFigure('F')">F</button>
-    <button onclick="toggleFigure('S')">S</button>
-    <button onclick="toggleFigure('SH')">SH</button>
-    <button onclick="toggleFigure('TH')">TH</button>
-    <button onclick="toggleFigure('V')">V</button>
-    <button onclick="toggleFigure('Z')">Z</button>
-    <button onclick="toggleFigure('ZH')">ZH</button>
+    <button class="toggle-btn" onclick="toggleFigure('DH')">DH</button>
+    <button class="toggle-btn" onclick="toggleFigure('F')">F</button>
+    <button class="toggle-btn" onclick="toggleFigure('S')">S</button>
+    <button class="toggle-btn" onclick="toggleFigure('SH')">SH</button>
+    <button class="toggle-btn" onclick="toggleFigure('TH')">TH</button>
+    <button class="toggle-btn" onclick="toggleFigure('V')">V</button>
+    <button class="toggle-btn" onclick="toggleFigure('Z')">Z</button>
+    <button class="toggle-btn" onclick="toggleFigure('ZH')">ZH</button>
     <p>Affricates</p>
-    <button onclick="toggleFigure('CH')">CH</button>
-    <button onclick="toggleFigure('JH')">JH</button>
+    <button class="toggle-btn" onclick="toggleFigure('CH')">CH</button>
+    <button class="toggle-btn" onclick="toggleFigure('JH')">JH</button>
     <p>Nasals</p>
-    <button onclick="toggleFigure('M')">M</button>
-    <button onclick="toggleFigure('N')">N</button>
-    <button onclick="toggleFigure('NG')">NG</button>
+    <button class="toggle-btn" onclick="toggleFigure('M')">M</button>
+    <button class="toggle-btn" onclick="toggleFigure('N')">N</button>
+    <button class="toggle-btn" onclick="toggleFigure('NG')">NG</button>
     <p>Liquids</p>
-    <button onclick="toggleFigure('L')">L</button>
-    <button onclick="toggleFigure('R')">R</button>
+    <button class="toggle-btn" onclick="toggleFigure('L')">L</button>
+    <button class="toggle-btn" onclick="toggleFigure('R')">R</button>
     <p>Glides</p>
-    <button onclick="toggleFigure('W')">W</button>
-    <button onclick="toggleFigure('Y')">Y</button>
+    <button class="toggle-btn" onclick="toggleFigure('W')">W</button>
+    <button class="toggle-btn" onclick="toggleFigure('Y')">Y</button>
     <p>Silence</p>
-    <button onclick="toggleFigure('sil')">sil</button>
+    <button class="toggle-btn" onclick="toggleFigure('sil')">sil</button>
     <div>
       <figure id="AA" class="figure"><img src="plots/AA.png" alt="plots/AA.png" width="600"><figcaption>AA</figcaption></figure>
       <figure id="AE" class="figure"><img src="plots/AE.png" alt="plots/AE.png" width="600"><figcaption>AE</figcaption></figure>
@@ -115,13 +119,13 @@
     </div>
     <h4>3. Bonus: t-SNE visualization of multiple phonemes of a specific accent.</h4>
     <p>(Click on the buttons to toggle the figures)</p>
-    <button onclick="toggleFigure('AB_accent')">AB</button>
-    <button onclick="toggleFigure('CN_accent')">CN</button>
-    <button onclick="toggleFigure('IN_accent')">IN</button>
-    <button onclick="toggleFigure('KR_accent')">KR</button>
-    <button onclick="toggleFigure('SP_accent')">SP</button>
-    <button onclick="toggleFigure('US_accent')">US</button>
-    <button onclick="toggleFigure('VN_accent')">VN</button>
+    <button class="toggle-btn" onclick="toggleFigure('AB_accent')">AB</button>
+    <button class="toggle-btn" onclick="toggleFigure('CN_accent')">CN</button>
+    <button class="toggle-btn" onclick="toggleFigure('IN_accent')">IN</button>
+    <button class="toggle-btn" onclick="toggleFigure('KR_accent')">KR</button>
+    <button class="toggle-btn" onclick="toggleFigure('SP_accent')">SP</button>
+    <button class="toggle-btn" onclick="toggleFigure('US_accent')">US</button>
+    <button class="toggle-btn" onclick="toggleFigure('VN_accent')">VN</button>
     <div>
       <figure id="AB_accent" class="figure"><img src="plots_accent/AB.png" alt="plots_accent/AB.png" width="800"><figcaption>AB</figcaption></figure>
       <figure id="CN_accent" class="figure"><img src="plots_accent/CN.png" alt="plots_accent/CN.png" width="800"><figcaption>CN</figcaption></figure>
@@ -132,6 +136,12 @@
       <figure id="VN_accent" class="figure"><img src="plots_accent/VN.png" alt="plots_accent/VN.png" width="800"><figcaption>VN</figcaption></figure>
     </div>
     <script>
+      const toggleBtns = document.querySelectorAll('.toggle-btn');
+      toggleBtns.forEach(function(btn) {
+        btn.addEventListener('click', function() {
+          btn.classList.toggle('btn-toggle');
+        });
+      });
       function toggleFigure(id) {
         var figure = document.getElementById(id);
         if (figure.classList.contains("figure")) {
